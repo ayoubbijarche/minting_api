@@ -20,7 +20,7 @@ pub mod minting_api {
         ctx: Context<MintTokens>,
         amount: u64,
     ) -> Result<()> {
-        mint_tokens(ctx, amount);
+        minttokens(ctx, amount);
         Ok(())
     }
 }

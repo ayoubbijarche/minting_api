@@ -99,7 +99,7 @@ pub fn initiate_token(ctx: Context<InitToken>, params: InitTokenParams) -> Resul
     Ok(())
 }
 
-pub fn mint_tokens(ctx: Context<MintTokens>, amount: u64) -> Result<()> {
+pub fn minttokens(ctx: Context<MintTokens>, amount: u64) -> Result<()> {
     let cpi_ctx = CpiContext::new(
         ctx.accounts.token_program.to_account_info(),
         MintTo {
